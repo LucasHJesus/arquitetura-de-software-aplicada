@@ -36,6 +36,5 @@ Base.metadata.create_all(engine)
 
 
 """ 
-docker run --name postgreSQL_SERVER -e POSTGRES_PASSWORD=banco -e POSTGRES_USER=postgres -p 5432:5432 
--v C:/Users/lukas/prog/arquitetura-de-software-aplicada/dataBasesPersist:/var/lib/postgresql/data -d postgres:14
+docker run --name postgreSQL_SERVER -e POSTGRES_PASSWORD=banco -e POSTGRES_USER=postgres -p 5432:5432 -v C:/Users/lukas/prog/arquitetura-de-software-aplicada/dataBasesPersist:/var/lib/postgresql/data -d postgres:14
  """
