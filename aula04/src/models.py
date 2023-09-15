@@ -12,6 +12,7 @@ url = URL.create(
     port=5432
 )
 
+
 #url = "postgresql+psycopg2://postgres:banco@localhost/postgres"
 
 # nesse ponto são instanciados os objetos para conexão com o banco
@@ -23,6 +24,15 @@ Base = declarative_base()
 
 class Aluno(Base):
     __tablename__ = 'aluno'
+
+    id          = Column(Integer, primary_key=True)
+    nome        = Column(String, nullable=True)
+    email       = Column(String)
+    cpf         = Column(String, nullable=True)
+    endereco    = Column(String, nullable=True)
+
+class Professor(Base):
+    __tablename__ = 'professor'
 
     id          = Column(Integer, primary_key=True)
     nome        = Column(String, nullable=True)

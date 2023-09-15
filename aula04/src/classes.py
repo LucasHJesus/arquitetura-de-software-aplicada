@@ -6,3 +6,10 @@ class Request_Aluno(BaseModel):
     email:      str
     cpf:        str
     endereco:   str
+
+class Request_Professor(BaseModel):
+    id:         int
+    nome:       str
+    email:      str
+    cpf:        str
+    endereco:   str
